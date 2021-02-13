@@ -1,0 +1,37 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Ibamam
+
+### Função para`{juntar_bases}`
+
+Agora precisamos unir as bases do Ibama (*multas_arrecadadas_limpo* **e** *multas_distribuidas_limpo*) com os codigos municipais do IBGE (*id_codigos*).
+Para isso aplique a função conforme descrito abaixo:
+
+### Exemplo
+```{r, message=FALSE, warning=FALSE}
+# Juntando *multas_arrecadadas* com os codigos municipais
+# multas <- juntar_bases(base_ibama = multas_arrecadadas_limpo, base_ibgecode = id_codigos)
+
+# Juntando *multas_distribuidas* com os códigos municipais
+# autuacoes <- juntar_bases(base_ibama = multas_distribuidas_limpo, base_ibgecode = id_codigos)
+```
+
+
+## Como citar o pacote
+
+* [![DOI](<https://zenodo.org/badge/DOI/10.5281/zenodo.4509344.svg>)](<https://doi.org/10.5281/zenodo.4509344>)
+
+* "**CRUZ NETO, Claudiano C., MILZ, Beatriz., MACEDO, Samuel** (2021). Ibamam: Pacote para tratamento da Base de dados para multas e autuações ambientais aplicadas pelo Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis - Brasil. <https://doi.org/10.5281/zenodo.4509344>".
